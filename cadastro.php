@@ -5,7 +5,7 @@ $mensagem = '';
 if(isset($_POST['nome']) && isset($_POST['sobrenome']) && isset($_POST['data_de_nascimento']) && isset($_POST['sexo']) && isset($_POST['email']) && isset($_POST['usuario']) && isset($_POST['senha']))
 {
 	$nome = $_POST['nome'];
-	$telefone = $_POST['sobrenome'];
+	$sobrenome = $_POST['sobrenome'];
 	$data_de_nascimento = $_POST['data_de_nascimento'];
 	$sexo = $_POST['sexo'];
 	$email = $_POST['email'];
