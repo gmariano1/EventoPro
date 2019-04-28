@@ -19,7 +19,7 @@ if(isset($_POST['nome']) && isset($_POST['sobrenome']) && isset($_POST['data_de_
 	$insere=$conn->prepare($query);
 	if($insere->execute([':nome' => $nome, ':sobrenome' => $sobrenome, ':data_de_nascimento' => $data_de_nascimento, ':sexo' => $sexo, ':email' => $email, ':usuario' => $usuario, ':criptosenha' => $criptosenha])){
 		$mensagem = 'Inserido com sucesso';
-		header("location: cadastro.php?verifica=s");
+		header("location: listar.php?verifica=s");
 	}
 }
 
